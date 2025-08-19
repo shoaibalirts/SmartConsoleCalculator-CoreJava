@@ -36,7 +36,9 @@ public class Calculator {
          }
          System.out.print("Do you want to calculate again?(y/n): ");
          askUserToContinue = sc.next().charAt(0);
-         System.out.println("Thank you for using the calculator.");
+         if (askUserToContinue == 'n') {
+            System.out.println("Thank you for using the calculator.");
+         }
       } while (askUserToContinue != 'n');
    }
 }
